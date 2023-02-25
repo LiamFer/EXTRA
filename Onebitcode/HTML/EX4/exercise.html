@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga dos Astronautas</title>
+</head>
+
+<body>
+    <h3>Cadastro da liga dos astronautas</h3>
+    <form action="GET">
+
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" autocomplete="name" required>
+        </p>
+
+        <p>
+            <label for="iemail">Email: </label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+
+            <label for="ipassword">- Password: </label>
+            <input type="password" name="password" id="ipassword" required>
+        </p>
+
+        <p>
+            <label for="ibirth">Data de nascimento: </label>
+            <input type="date" name="birth" id="ibirth" required>
+
+            <label for="ifoto">- Foto: </label>
+            <input type="file" name="foto" id="ifoto" required>
+        </p>
+
+        <p>
+            <label for="inacionalidade">Nacionalidade: </label>
+            <select name="nacionalidade" id="inacionalidade" required>
+                <option value="" selected disabled>Selecione uma nacionalidade</option>
+                <option value="russo">Russo</option>
+                <option value="americano">Americano</option>
+                <option value="brasileiro">Brasileiro</option>
+            </select>
+
+            <label for="genero">- Genêro: </label>
+            <label for="femea">F</label>
+            <input type="radio" name="genero" id="femea">
+            <label for="homem">M</label>
+            <input type="radio" name="genero" id="homem">
+
+        </p>
+
+        <p>Suas principais qualidades: <br>
+            <label for="iinteligencia">Inteligência</label>
+            <input type="checkbox" name="inteligencia" id="iinteligencia">
+            |
+            <label for="iresili">Resiliência</label>
+            <input type="checkbox" name="resili" id="iresili">
+            |
+            <label for="ipreparo">Preparo físico</label>
+            <input type="checkbox" name="preparo" id="ipreparo">
+            |
+            <label for="ieduca">Educação</label>
+            <input type="checkbox" name="educacao" id="ieducacao">
+            |
+        </p>
+
+        <p>
+            <textarea placeholder="Porque você gostaria de ser um astronauta" name="motivos" id="imotivo" cols="30"
+                rows="10"></textarea>
+        </p>
+
+        <input type="submit" value="Criar">
+    </form>
+</body>
+
+</html>
