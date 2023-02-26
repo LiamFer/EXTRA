@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#Header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 25px;
+}
+
+#icon {
+  width: 40px;
+}
+
+#logo {
+  min-width: 200px;
+}
+
+#botoes {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  font-family: "century gothic", monospace;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid red;
+  transition: all 0.5s;
+}
