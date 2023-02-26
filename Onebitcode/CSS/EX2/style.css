@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans&family=Roboto&display=swap");
+
+body {
+  margin: 0px;
+}
+
+.posts {
+  background-color: #fffafa;
+  margin: 0px auto 0px auto;
+  width: 900px;
+}
+
+.posts h3 {
+  color: #008080;
+  font-family: "Roboto", monospace;
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.posts h1 {
+  font-family: "Montserrat", sans-serif;
+font-size: 28px;
+}
+
+.posts p {
+  font-family: "Open Sans", monospace;
+}
+
+hr {
+  margin: 0px;
+}
+
+.content {
+  padding: 40px;
+}
