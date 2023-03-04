@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: darkcyan;
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  border: 2px solid black;
+  background: white;
+  font-size: 20px;
+  font-family: "century gothic", monospace;
+  justify-content: center;
+  align-items: center;
+}
