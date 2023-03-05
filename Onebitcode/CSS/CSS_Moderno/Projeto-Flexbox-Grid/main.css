@@ -46,7 +46,7 @@ a {
 nav > a:hover {
   text-underline-offset: 20px;
   text-decoration: 2px underline rgba(255, 255, 255);
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 main {
@@ -168,6 +168,10 @@ footer a {
 }
 
 @media screen and (max-width: 978px) {
+  body {
+    overflow-x: hidden;
+  }
+
   header,
   footer {
     gap: 20px;
@@ -210,12 +214,12 @@ footer a {
 }
 
 @media (max-width: 375px) {
-  header {
-    padding-bottom: 15px;
-  }
-
   body {
     overflow-x: hidden;
+  }
+
+  header {
+    padding-bottom: 15px;
   }
 
   #main-content {
