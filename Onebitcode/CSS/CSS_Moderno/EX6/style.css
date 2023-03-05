@@ -8,7 +8,33 @@
 
 body {
   background-color: darkslategray;
-  height: 100vh;
+  text-transform: uppercase;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(auto);
+  grid-template-areas:
+    "header header header"
+    "section section section"
+    "section section section"
+    "section section section"
+    "footer footer footer";
+}
+
+section {
+  grid-area: section;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(auto);
+  gap: 10px;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item4 item4"
+    "item5 item5 item6";
 }
 
 .item {
@@ -17,7 +43,40 @@ body {
   font-family: "century gothic";
   font-size: 28px;
   font-weight: bold;
-  padding: 10px;
 }
 
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
 
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header,
+footer {
+  background-color: rgba(240, 255, 255, 0.507);
+  border: 2px solid black;
+  font-family: "century gothic";
+  font-size: 28px;
+  font-weight: bold;
+}
