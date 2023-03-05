@@ -7,12 +7,13 @@
 }
 
 :root {
-  --darkgray: rgb(54, 54, 54);
+  --darkgray: rgb(0, 0, 0);
   --box-visualizer: rgba(240, 248, 255, 0.349);
 }
 
 body {
   font-family: "century gothic";
+  min-width: 320px;
 }
 
 header {
@@ -67,6 +68,8 @@ main {
 
 #main-content {
   display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
 #container-sports {
@@ -85,7 +88,7 @@ main {
   height: 450px;
   border-radius: 20px;
   border: 1px solid white;
-  max-width: 350px;
+  max-width: 320px;
   background-color: var(--box-visualizer);
 }
 
@@ -106,17 +109,18 @@ main {
   border: 2px solid black;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 #container-extra {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  gap: 25px;
   justify-content: center;
   align-items: center;
   min-width: 500px;
   max-width: fit-content;
-  padding: 20px;
+  height: min-content;
+  padding: 25px;
   background-color: var(--darkgray);
   text-transform: uppercase;
   text-align: center;
@@ -125,6 +129,9 @@ main {
 
 .box-extra {
   width: 300px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .box-extra img {
@@ -134,10 +141,18 @@ main {
   object-fit: cover;
 }
 
+.box-extra:hover {
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.473);
+  cursor: pointer;
+}
+
 footer {
   background-color: var(--darkgray);
   padding: 40px;
   display: flex;
+  text-align: center;
+  gap: 20px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -149,4 +164,67 @@ footer > img {
 
 footer a {
   font-size: 28px;
+}
+
+@media screen and (max-width: 978px) {
+  header,
+  footer {
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  header img,
+  footer img {
+    width: 190px;
+  }
+
+  nav {
+    font-size: 17px;
+  }
+
+  footer a {
+    font-size: 1em;
+  }
+
+  #main-content {
+    flex-wrap: wrap;
+  }
+
+  #container-extra {
+    min-width: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .box-extra {
+    width: 75%;
+    min-width: 280px;
+  }
+
+  .box-extra img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding-bottom: 15px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #main-content {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .box-sports {
+    width: 250px;
+    font-size: 1em;
+    height: 390px;
+  }
 }
