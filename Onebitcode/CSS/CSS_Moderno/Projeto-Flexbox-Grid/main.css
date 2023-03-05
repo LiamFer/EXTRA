@@ -13,7 +13,7 @@
 
 body {
   font-family: "century gothic", Arial, Helvetica, sans-serif;
-  min-width: 320px;
+  height: 100vh;
 }
 
 header {
@@ -52,7 +52,7 @@ nav > a:hover {
 main {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 0px;
   justify-content: center;
   align-items: center;
 }
@@ -212,9 +212,8 @@ footer a {
 }
 
 @media (max-width: 375px) {
-  body,
-  html {
-    overflow-x: hidden !important;
+  #container-sports {
+    width: 300px;
   }
 
   header {
@@ -224,6 +223,7 @@ footer a {
   #main-content {
     flex-wrap: wrap;
     gap: 30px;
+    width: 300px;
   }
 
   .box-sports {
